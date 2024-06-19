@@ -1,0 +1,33 @@
+
+#include <stdio.h>
+
+int main() {
+    int confidential_word =7; 
+    int guess; 
+    int guess_limit=5; 
+    int z;
+    printf("Please choose only 0 to 9 digits\n");
+    for(int i=1;i<=guess_limit;i++){   
+        printf("Guess your number  %d :",i);   
+        scanf("%d",&guess);{    
+            if(guess==confidential_word){     
+                printf("Congratulations!your guess is correct\n");  
+                break;
+                }    
+                else{  
+                    printf("Sorry!you lost\n");  
+                    } 
+                
+                    if(i==4){
+                        printf("And remember this is your last chance otherwise you lost the whole game \n");
+                    }
+                    
+                    }
+                    if(i==5){
+                        printf("Better luck next time ");
+                    }
+                    }    
+    
+       
+    return 0;
+}
